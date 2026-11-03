@@ -1,12 +1,12 @@
 /* CSS Variables for Premium Vintage Theme */
 :root {
-    --bg-color: #f2e8d5; /* Vintage butterscotch/parchment background */
-    --text-main: #222222; /* Deep charcoal for high contrast */
+    --bg-color: #f2e8d5; 
+    --text-main: #222222; 
     --text-muted: #4a4a4a;
     --border-color: #d1c5b4;
     --container-width: 1200px;
-    --frame-wood: #2a1610; /* Dark rich brown wood */
-    --mat-board-color: #faf8f5; /* Off-white museum mat board */
+    --frame-wood: #2a1610; 
+    --mat-board-color: #faf8f5; 
 }
 
 /* Base Reset */
@@ -22,31 +22,30 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    /* Soft vignette effect for the gallery wall */
     background-image: radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.05) 100%);
 }
 
-/* Logo Setup */
-.logo-container {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    width: 90px; /* Scales the 2000px image down to a classy museum emblem size */
-    height: auto;
-    z-index: 10;
+/* -----------------------------------
+   Hero Banner (1920x1080 Full Width)
+------------------------------------ */
+.hero-banner {
+    width: 100%;
+    /* Adds a subtle red line linking to your gallery dividers */
+    border-bottom: 1px solid rgba(108, 0, 0, 0.4);
+    overflow: hidden;
 }
 
-.logo-container img {
+.hero-banner img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: auto; /* Naturally maintains the 1920x1080 proportion */
+    display: block;
 }
 
 /* Header Layout */
 header {
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 6rem 2rem 4rem;
+    padding: 5rem 2rem 4rem; /* Slightly reduced top padding since the banner is above it */
     text-align: center;
     position: relative;
 }
@@ -107,36 +106,45 @@ header {
     align-items: center;
 }
 
+/* Image Title Styling */
+.art-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--text-main);
+    letter-spacing: 1px;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    width: 100%;
+}
+
 /* Uniform Inverted Rectangle (Portrait) Frame */
 .frame-3d {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Forces the uniform portrait rectangle */
+    aspect-ratio: 1 / 1; 
     background-color: var(--frame-wood);
     border-radius: 3px;
-    /* Creating the 3D realistic pop off the wall */
     box-shadow: 
         15px 25px 30px rgba(0, 0, 0, 0.25), 
         inset 3px 3px 5px rgba(255, 255, 255, 0.1), 
         inset -3px -3px 6px rgba(0, 0, 0, 0.6); 
     margin-bottom: 1.5rem;
-    position: relative; /* Crucial anchor for the inner mat board */
+    position: relative; 
     overflow: hidden;
 }
 
 /* The Museum Mat Board */
 .mat-board {
-    /* Absolute positioning completely stops the image from stretching the frame */
     position: absolute;
-    top: 15px; /* Creates the 18px wooden frame border */
+    top: 15px; 
     bottom: 15px;
     left: 15px;
     right: 15px;
     background-color: var(--mat-board-color);
-    padding: 30px; /* The white space around the art */
+    padding: 30px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Inner shadow mimicking the depth of the cut mat */
     box-shadow: 
         inset 4px 4px 8px rgba(0, 0, 0, 0.4),
         inset -2px -2px 5px rgba(255, 255, 255, 0.8);
@@ -146,13 +154,11 @@ header {
 .mat-board img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Scales the art perfectly without cropping */
-    /* Gives the canvas/paper a slight shadow against the mat board */
+    object-fit: contain; 
     filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.15));
     transition: transform 0.4s ease;
 }
 
-/* Hover effect to lean in and inspect the art */
 .frame-3d:hover .mat-board img {
     transform: scale(1.03);
 }
@@ -192,6 +198,16 @@ header {
     line-height: 1.6;
 }
 
+/* Horizontal Gallery Divider */
+.gallery-divider {
+    grid-column: 1 / -1; 
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(108, 0, 0, 0.4), transparent);
+    margin: 2rem 0 3rem 0;
+    width: 100%;
+}
+
 /* Footer Layout */
 footer {
     margin-top: 6rem;
@@ -220,13 +236,11 @@ footer {
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
-    .logo-container { width: 60px; top: 1.5rem; left: 1.5rem; }
     .museum-title { font-size: 2.5rem; }
     .museum-subtitle { font-size: 0.9rem; }
     header { padding: 4rem 1.5rem 2rem; }
     .gallery-container { gap: 4rem 1.5rem; }
     
-    /* Ensuring the wood border stays proportionate on smaller screens */
     .mat-board {
         top: 12px;
         bottom: 12px;
@@ -235,29 +249,3 @@ footer {
         padding: 20px;
     }
 }
-
-
-/* Image Title Styling */
-.art-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.35rem;
-    font-weight: 600;
-    color: var(--text-main);
-    letter-spacing: 1px;
-    margin-bottom: 1.25rem;
-    text-align: center;
-    width: 100%;
-}
-
-/* Horizontal Gallery Divider */
-.gallery-divider {
-    /* grid-column: 1 / -1 forces the line to span across all columns in the grid */
-    grid-column: 1 / -1; 
-    border: none;
-    height: 1px;
-    /* A refined gradient line featuring a subtle dark red core fading out to the edges */
-    background: linear-gradient(90deg, transparent, rgba(108, 0, 0, 0.4), transparent);
-    margin: 2rem 0 3rem 0;
-    width: 100%;
-}
-
