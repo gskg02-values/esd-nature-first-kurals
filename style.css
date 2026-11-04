@@ -57,7 +57,7 @@ header {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
-    color: #1a1a1a;
+    color: #4a4a4a;
 }
 
 .museum-subtitle {
@@ -82,6 +82,8 @@ header {
     font-weight: 400;
     font-style: italic;
     margin-bottom: 1.5rem;
+    color: var(--text-muted);
+	
 }
 
 .museum-intro p {
@@ -89,6 +91,18 @@ header {
     font-size: 1.05rem;
     font-weight: 300;
 }
+
+
+/* Gallery Section Header Alignment */
+.gallery-header {
+    text-align: center;
+    width: 100%;
+    margin: 5rem auto 1rem auto; /* Creates perfect breathing room above the first images */
+}
+
+
+
+
 
 /* Endless Grid Layout */
 .gallery-container {
