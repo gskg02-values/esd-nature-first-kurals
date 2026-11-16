@@ -1,0 +1,1353 @@
+/* ==========================================================================
+   1. NATURE-FIRST MUSEUM DESIGN TOKENS
+   ========================================================================== */
+:root {
+    --wall-sandstone: #EAE3D2;       
+    --archival-paper: #F7F4EB;       
+    --tablet-parchment: #EFE9DA;     
+    --canopy-moss: #162A1E;          
+    --chlorophyll-sage: #2D4F38;     
+    --terracotta-earth: #6E3219;     
+    --sunlit-amber: #C29B40;         
+    --timber-frame: #281A14;         
+    --gallery-mat: #FFFFFF;          
+    --charcoal-ink: #1C1B18;         
+    --muted-earth: #524B42;          
+    --rail-metallic: linear-gradient(90deg, #4b3d1a, #c29b40, #7c6325, #dfc06d, #4b3d1a);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--wall-sandstone);
+    color: var(--charcoal-ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   2. STICKY CURATORIAL NAVIGATION BAR
+   ========================================================================== */
+.museum-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(22, 42, 30, 0.96);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid var(--sunlit-amber);
+    padding: 0.9rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--archival-paper);
+}
+
+.nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.02rem;
+    letter-spacing: 0.16em;
+    color: var(--sunlit-amber);
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.2rem;
+}
+
+.nav-links a {
+    color: var(--archival-paper);
+    text-decoration: none;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: var(--sunlit-amber);
+}
+
+.nav-status {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    color: #e2dcd0;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 0.38rem 0.9rem;
+    border: 1px solid rgba(194, 155, 64, 0.4);
+    border-radius: 2px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #52b788;
+    box-shadow: 0 0 8px #52b788;
+}
+
+/* ==========================================================================
+   3. HERO STAGE
+   ========================================================================== */
+.hero-stage {
+    position: relative;
+    width: 100%;
+    border-bottom: 3px solid var(--canopy-moss);
+    background-color: var(--canopy-moss);
+}
+
+.hero-media-frame {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--canopy-moss); 
+}
+
+.hero-bg-img {
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+
+.hero-vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(14, 30, 20, 0.15) 0%, rgba(10, 24, 16, 0.65) 100%);
+    pointer-events: none;
+}
+
+.hero-plaque-container {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5rem 5% 5rem; 
+    background-color: var(--canopy-moss); 
+}
+
+.hero-brass-plaque {
+    background-color: rgba(247, 244, 235, 0.93);
+    backdrop-filter: blur(6px);
+    padding: 3.2rem 4rem;
+    max-width: 860px;
+    text-align: center;
+    border: 2px solid var(--canopy-moss);
+    outline: 1px solid var(--sunlit-amber);
+    outline-offset: -10px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.plaque-serial {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.25em;
+    color: var(--chlorophyll-sage);
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.2rem, 4.2vw, 3.6rem);
+    font-weight: 700;
+    color: var(--canopy-moss);
+    letter-spacing: 0.04em;
+    line-height: 1.15;
+    margin-bottom: 1.1rem;
+}
+
+.hero-subtitle {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.2rem, 2vw, 1.55rem);
+    color: var(--charcoal-ink);
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: 720px;
+    margin: 0 auto 1.4rem;
+}
+
+.hero-divider {
+    width: 90px;
+    height: 2px;
+    background-color: var(--sunlit-amber);
+    margin: 0 auto 1.2rem;
+}
+
+.hero-tagline {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.25rem;
+    color: var(--terracotta-earth);
+    font-style: italic;
+    margin-bottom: 1.2rem;
+}
+
+.hero-pillars {
+    font-size: 0.85rem;
+    color: var(--canopy-moss);
+    font-weight: 600;
+    letter-spacing: 0.24em;
+}
+
+/* ==========================================================================
+   4. MUSEUM ROTUNDA (PROLOGUE) & ALCOVE
+   ========================================================================== */
+.museum-rotunda {
+    padding: 5.5rem 5% 4rem;
+    max-width: 1060px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hall-classification {
+    font-size: 0.78rem;
+    letter-spacing: 0.26em;
+    color: var(--chlorophyll-sage);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.rotunda-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3.2vw, 2.65rem);
+    color: var(--canopy-moss);
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+.rotunda-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--terracotta-earth);
+    margin-bottom: 2.2rem;
+}
+
+.ornamental-rule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.8rem auto 2.8rem;
+    max-width: 480px;
+    color: var(--sunlit-amber);
+    font-family: 'Playfair Display', serif;
+}
+
+.ornamental-rule::before,
+.ornamental-rule::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(22, 42, 30, 0.22);
+}
+
+.ornamental-rule span {
+    padding: 0 1.2rem;
+    font-size: 1.3rem;
+}
+
+.prologue-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.55rem;
+    letter-spacing: 0.12em;
+    color: var(--canopy-moss);
+    margin-bottom: 1.8rem;
+}
+
+.prologue-columns {
+    column-count: 2;
+    column-gap: 3.2rem;
+    column-rule: 1px solid rgba(22, 42, 30, 0.14);
+    text-align: justify;
+    background: var(--archival-paper);
+    padding: 2.8rem 3.2rem;
+    border: 1px solid #d8d0c0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.prologue-columns p {
+    margin-bottom: 1.2rem;
+    color: var(--charcoal-ink);
+    font-size: 1rem;
+}
+
+/* Featured Inquiry Alcove */
+.alcove-section {
+    max-width: 1120px;
+    margin: 1.5rem auto 5.5rem;
+    padding: 0 5%;
+}
+
+.alcove-card {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    background-color: var(--canopy-moss);
+    color: var(--archival-paper);
+    border: 2px solid var(--sunlit-amber);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.alcove-text-side {
+    padding: 3.2rem 2.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alcove-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    color: var(--sunlit-amber);
+    margin-bottom: 0.8rem;
+}
+
+.alcove-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1rem;
+    color: #ffffff;
+    line-height: 1.25;
+    margin-bottom: 1.8rem;
+    letter-spacing: 0.04em;
+}
+
+.alcove-statements {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.6rem;
+}
+
+.statement-pill {
+    background: rgba(194, 155, 64, 0.14);
+    border-left: 3px solid var(--sunlit-amber);
+    padding: 0.65rem 1rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: #f7eed7;
+}
+
+.alcove-body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #dfd8c8;
+    margin-bottom: 1.8rem;
+}
+
+.alcove-Signoff {
+    font-size: 0.82rem;
+    letter-spacing: 0.22em;
+    color: var(--sunlit-amber);
+    font-weight: 600;
+}
+
+.alcove-image-side {
+    padding: 2.4rem;
+    background: #0f1d14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alcove-specimen-frame {
+    background: var(--gallery-mat);
+    padding: 1.2rem;
+    border: 8px solid var(--timber-frame);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+    width: 100%;
+    max-width: 380px;
+}
+
+.alcove-specimen-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   5. CURATORIAL WINGS (About, Vision, Mission)
+   ========================================================================== */
+.wings-section {
+    max-width: 1120px;
+    margin: 0 auto 6rem;
+    padding: 0 5%;
+}
+
+.wings-header {
+    text-align: center;
+    margin-bottom: 2.8rem;
+}
+
+.wings-kicker {
+    font-size: 0.78rem;
+    letter-spacing: 0.25em;
+    color: var(--terracotta-earth);
+    font-weight: 600;
+}
+
+.wings-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    color: var(--canopy-moss);
+    margin: 0.4rem 0 0.6rem;
+    letter-spacing: 0.08em;
+}
+
+.wings-instruction {
+    font-size: 0.92rem;
+    color: var(--muted-earth);
+    margin-bottom: 1.8rem;
+}
+
+.wing-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.wing-tab {
+    background: var(--archival-paper);
+    color: var(--canopy-moss);
+    border: 1px solid #c5bca8;
+    padding: 0.8rem 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.96rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.wing-tab:hover {
+    border-color: var(--canopy-moss);
+    background: #e6dfd0;
+}
+
+.wing-tab.active {
+    background: var(--canopy-moss);
+    color: var(--sunlit-amber);
+    border-color: var(--canopy-moss);
+    box-shadow: 0 6px 16px rgba(22, 42, 30, 0.2);
+}
+
+.archival-tablet {
+    display: none;
+    position: relative;
+    /* Soften to a warm ivory paper color to match the reference */
+    background-color: #EAE3D2; 
+    padding: 4.5rem 6%;
+    margin-bottom: 3rem;
+    
+    /* 1. Subtle Outer Border */
+    border: 1px solid #d2c8b2; 
+    
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.015);
+}
+
+
+/* 2. Precise Classic Double-Border Look (Matches your image_47da46.png) */
+.archival-tablet::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    border: 1px solid rgba(209, 197, 180, 0.4);
+    pointer-events: none;
+}
+
+
+
+.archival-tablet.active {
+    display: block;
+    animation: fadeInTablet 0.35s ease;
+}
+
+@keyframes fadeInTablet {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hidden to maintain the clean double-border look from your screenshot */
+.tablet-brass-corner {
+    display: none;
+}
+
+.tablet-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 2.5rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid rgba(22, 42, 30, 0.18);
+}
+
+.tablet-numeral {
+    font-size: 0.75rem;
+    letter-spacing: 0.24em;
+    color: var(--terracotta-earth);
+    font-weight: 600;
+}
+
+.tablet-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1rem;
+    color: var(--canopy-moss);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0.4rem 0 0.9rem;
+}
+
+.tablet-lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--chlorophyll-sage);
+    line-height: 1.45;
+}
+
+.tablet-dynamic-body {
+    max-width: 820px;
+    margin: 0 auto;
+    font-size: 1.04rem;
+    color: var(--charcoal-ink);
+}
+
+.tablet-dynamic-body p {
+    margin-bottom: 1.25rem;
+    text-align: justify;
+}
+
+.tablet-dynamic-body h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--canopy-moss);
+    letter-spacing: 0.06em;
+    margin: 1.8rem 0 0.8rem;
+    border-left: 3px solid var(--sunlit-amber);
+    padding-left: 0.75rem;
+}
+
+.tablet-callout {
+    background: var(--canopy-moss);
+    color: var(--sunlit-amber);
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin: 1.8rem 0;
+}
+
+/* ==========================================================================
+   6. THE EXHIBITION WALL (3D SHADOWBOX LAYOUT)
+   ========================================================================== */
+.museum-wall-section {
+    padding: 2rem 5% 7rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wall-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 2.5rem;
+}
+
+.wall-kicker {
+    font-size: 0.78rem;
+    letter-spacing: 0.28em;
+    color: var(--chlorophyll-sage);
+    font-weight: 600;
+}
+
+.wall-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+    color: var(--canopy-moss);
+    letter-spacing: 0.08em;
+    margin: 0.4rem 0 0.8rem;
+}
+
+.wall-subtitle {
+    font-size: 0.95rem;
+    color: var(--muted-earth);
+    margin-bottom: 1.8rem;
+}
+
+.wall-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.wing-filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.filter-btn {
+    background: var(--archival-paper);
+    border: 1px solid #c5bca8;
+    color: var(--charcoal-ink);
+    padding: 0.55rem 1.25rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--canopy-moss);
+    color: var(--sunlit-amber);
+    border-color: var(--canopy-moss);
+}
+
+.brass-picture-rail {
+    width: 100%;
+    height: 6px;
+    background: var(--rail-metallic);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 4rem;
+    border-radius: 2px;
+}
+
+/* Two-Column Side-by-Side Showcase Grid */
+.gallery-wall-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 500px));
+    gap: 4rem 4.5rem;
+    justify-content: center;
+}
+
+/* Fading Divider Line (Injected via JS after every 2 images) */
+.row-divider {
+    grid-column: 1 / -1; 
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(40, 26, 20, 0.15), transparent);
+    margin: 1.5rem 0 2.5rem 0; 
+}
+
+/* Individual Exhibit Post */
+.exhibit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding-top: 85px; 
+}
+
+/* Realistic 3D Depth Frame */
+.exhibit-frame {
+    position: relative; 
+    width: 100%;
+    max-width: 440px;
+    background-color: var(--gallery-mat);
+    
+    /* 3D Directional Lighting on the Wood Frame */
+    border-top: 14px solid #38261e;    
+    border-left: 14px solid #281a14;   
+    border-right: 14px solid #1c110d;  
+    border-bottom: 14px solid #0f0907; 
+    
+    padding: 5% 6.5%; 
+    
+    box-shadow: 
+        0 18px 32px rgba(0, 0, 0, 0.28),
+        0 6px 12px rgba(0, 0, 0, 0.18),
+        inset 3px 5px 8px rgba(0, 0, 0, 0.35);
+        
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+
+/* Dual Vertical Picture-Rail Suspension Wires */
+.exhibit-frame::before {
+    content: '';
+    position: absolute;
+    bottom: 100%; 
+    left: 25%;
+    right: 25%;
+    height: 75px; 
+    border-left: 1.5px solid rgba(40, 26, 20, 0.35);
+    border-right: 1.5px solid rgba(40, 26, 20, 0.35);
+    z-index: -1; 
+}
+
+/* Brass Rail Hook */
+.exhibit-frame::after {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 75px - 4px); 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 8px;
+    background: var(--sunlit-amber);
+    border: 1px solid #1a110d;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    z-index: -1;
+}
+
+.exhibit-card:hover .exhibit-frame {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 24px 42px rgba(0, 0, 0, 0.32),
+        0 10px 18px rgba(0, 0, 0, 0.20),
+        inset 3px 5px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Inner Vertical Botanical Photo */
+.exhibit-photo-box {
+    position: relative; 
+    width: 100%;
+    aspect-ratio: 4 / 5; 
+    overflow: hidden;
+    background-color: #f0ece1;
+}
+
+
+/* The 45-Degree Museum Mat Cut Overlay (Dark Bronze/Copper) */
+.exhibit-photo-box::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none; 
+    z-index: 2;
+    
+    /* 3D Directional Lighting for the inner dark copper/bronze edge */
+    border-top: 6px solid #5c3a21;    
+    border-left: 6px solid #462a16;   
+    border-right: 6px solid #2e1b0e;  
+    border-bottom: 6px solid #1a0f07; 
+    
+    box-shadow: inset 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.exhibit-photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.55s ease;
+}
+
+.exhibit-card:hover .exhibit-photo-box img {
+    transform: scale(1.03);
+}
+
+/* ARCHIVE # Label Below Frame */
+.exhibit-archive-no {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #2c2925;
+    margin: 2rem 0 0.6rem; 
+}
+
+/* Title Placed Below Archive No */
+.exhibit-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.4rem, 2vw, 1.7rem);
+    font-weight: 600; 
+    color: #191816;
+    letter-spacing: 0.03em;
+    margin-bottom: 1.4rem;
+}
+
+/* Two-Line Tamil Kural Text */
+.exhibit-tamil {
+    font-family: 'Noto Serif Tamil', Georgia, serif;
+    font-size: clamp(1.02rem, 1.4vw, 1.18rem);
+    font-weight: 500;
+    line-height: 1.75;
+    color: #181715;
+    white-space: pre-line;
+    margin-bottom: 1.1rem;
+    max-width: 95%;
+}
+
+/* Two-Line Italic English Couplet */
+.exhibit-english {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.12rem, 1.5vw, 1.28rem);
+    font-style: italic;
+    line-height: 1.55;
+    color: #4a453d;
+    white-space: pre-line;
+    max-width: 92%;
+}
+
+/* ==========================================================================
+   7. CURATORIAL LIGHTBOX MODAL
+   ========================================================================== */
+.lightbox-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: rgba(15, 26, 19, 0.95);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.lightbox-modal.open {
+    display: flex;
+}
+
+.lightbox-stage {
+    max-width: 820px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lightbox-top-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    color: var(--archival-paper);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.lightbox-frame {
+    background: var(--gallery-mat);
+    padding: 1.2rem;
+    border: 10px solid var(--timber-frame);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+    max-height: 62vh;
+    display: flex;
+    justify-content: center;
+}
+
+.lightbox-frame img {
+    max-height: calc(62vh - 2.4rem);
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.lightbox-plaque {
+    margin-top: 1.2rem;
+    color: var(--archival-paper);
+}
+
+.lightbox-serial {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    color: var(--sunlit-amber);
+    margin-bottom: 0.6rem;
+}
+
+.lightbox-tamil-text {
+    font-family: 'Noto Serif Tamil', serif;
+    font-size: 1.1rem;
+    line-height: 1.65;
+    color: #ffffff;
+    white-space: pre-line;
+    margin-bottom: 0.6rem;
+}
+
+.lightbox-english-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #d8d2c5;
+    white-space: pre-line;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: var(--sunlit-amber);
+    font-size: 2.8rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(247, 244, 235, 0.1);
+    border: 1px solid var(--sunlit-amber);
+    color: var(--archival-paper);
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.lightbox-nav:hover {
+    background: var(--sunlit-amber);
+    color: var(--charcoal-ink);
+}
+
+.lightbox-nav.prev { left: 2rem; }
+.lightbox-nav.next { right: 2rem; }
+
+/* ==========================================================================
+   8. FOOTER & RESPONSIVENESS
+   ========================================================================== */
+.museum-footer {
+    text-align: center;
+    padding: 5rem 5% 4rem;
+    background-color: var(--canopy-moss);
+    border-top: 3px solid var(--sunlit-amber);
+    color: var(--archival-paper);
+}
+
+.footer-ornament {
+    font-size: 1.8rem;
+    color: var(--sunlit-amber);
+    margin-bottom: 0.9rem;
+}
+
+.quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.35rem;
+    max-width: 740px;
+    margin: 0 auto 1.4rem;
+    color: var(--archival-paper);
+}
+
+.copyright {
+    font-size: 0.8rem;
+    letter-spacing: 0.24em;
+    color: var(--sunlit-amber);
+    text-transform: uppercase;
+}
+
+@media (max-width: 960px) {
+    .prologue-columns,
+    .alcove-card {
+        grid-template-columns: 1fr;
+        column-count: 1;
+    }
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-plaque-container {
+        position: relative;
+        padding: 0;
+    }
+    .hero-brass-plaque {
+        max-width: 100%;
+        padding: 2.2rem 1.25rem;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
+    }
+    .gallery-wall-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .exhibit-frame {
+        border-width: 11px;
+    }
+    .lightbox-nav.prev { left: 0.5rem; }
+    .lightbox-nav.next { right: 0.5rem; }
+}
+
+
+/* ==========================================================================
+   SDG ALIGNMENT WING SPECIFIC STYLES
+   ========================================================================== */
+.sdg-list {
+    margin: 1rem 0 2rem 2rem;
+    color: var(--charcoal-ink);
+}
+
+.sdg-list li {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.sdg-list strong {
+    color: var(--canopy-moss);
+}
+
+.sdg-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0 2.5rem;
+}
+
+.sdg-item {
+    background: rgba(194, 155, 64, 0.08);
+    border: 1px solid rgba(194, 155, 64, 0.3);
+    padding: 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.sdg-item strong {
+    display: block;
+    color: var(--terracotta-earth);
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .sdg-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==========================================================================
+   9. ESD2030 & SDG ALIGNMENT WING (Merged from style_2.css)
+   ========================================================================== */
+.sdg-master-section {
+    --primary-dark: #1E293B;
+    --primary-accent: #2D6A4F;
+    --bg-light: #EAE3D2;
+    --text-main: #334155;
+    --text-muted: #64748B;
+    --white: #FBF5E9;
+    --sdg4: #C5192D;
+    --sdg11: #FD9D24;
+    --sdg13: #3F7E44;
+    --sdg15: #56C02B;
+    --gold-accent: #d4af37;
+    
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    padding: 60px 0;
+    border-top: 4px solid var(--canopy-moss);
+}
+
+.sdg-master-section h1, 
+.sdg-master-section h2, 
+.sdg-master-section h3, 
+.sdg-master-section h4, 
+.sdg-master-section h5 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-dark);
+    line-height: 1.3;
+}
+
+.sdg-master-section .museum-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Intro --- */
+.sdg-master-section .intro-section {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+}
+
+.sdg-master-section .intro-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+    color: var(--primary-accent);
+}
+
+.sdg-master-section .intro-section p {
+    font-size: 1.15rem;
+    margin-bottom: 16px;
+}
+
+.sdg-master-section .meta-note {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-top: 30px;
+    padding: 15px;
+    background: #E2E8F0;
+    border-radius: 8px;
+}
+
+/* --- Standard Content Blocks --- */
+.sdg-master-section .content-section {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 50px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    margin-bottom: 50px;
+}
+
+.sdg-master-section .content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0069D2;
+    padding-bottom: 15px;
+}
+
+.sdg-master-section .content-section > p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* --- Premium 2x2 Grid Layout --- */
+.sdg-master-section .premium-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.sdg-master-section .premium-card {
+    background: var(--white);
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+    transition: all 0.4s ease-in-out;
+    position: relative;
+}
+
+.sdg-master-section .premium-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.12);
+    border-color: var(--gold-accent);
+}
+
+.sdg-master-section .premium-card strong {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+    line-height: 1.4;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--sdg4);
+}
+
+.sdg-master-section .premium-card p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* --- Premium SDG Cards --- */
+.sdg-master-section .sdg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.sdg-master-section .sdg-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 6px solid #ccc;
+}
+
+.sdg-master-section .sdg-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.sdg-master-section .sdg-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.sdg-master-section .sdg-4 { border-bottom-color: var(--sdg4); }
+.sdg-master-section .sdg-4 .sdg-icon-wrapper { background: var(--sdg4); }
+.sdg-master-section .sdg-4 h3 { color: var(--sdg4); }
+
+.sdg-master-section .sdg-15 { border-bottom-color: var(--sdg15); }
+.sdg-master-section .sdg-15 .sdg-icon-wrapper { background: var(--sdg15); }
+.sdg-master-section .sdg-15 h3 { color: var(--sdg15); }
+
+.sdg-master-section .sdg-13 { border-bottom-color: var(--sdg13); }
+.sdg-master-section .sdg-13 .sdg-icon-wrapper { background: var(--sdg13); }
+.sdg-master-section .sdg-13 h3 { color: var(--sdg13); }
+
+.sdg-master-section .sdg-11 { border-bottom-color: var(--sdg11); }
+.sdg-master-section .sdg-11 .sdg-icon-wrapper { background: var(--sdg11); }
+.sdg-master-section .sdg-11 h3 { color: var(--sdg11); }
+
+.sdg-master-section .sdg-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.sdg-master-section .sdg-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+    /* NEW: Fine divider line and breathing room */
+    padding-bottom: 15px; /* Space between the text and the line */
+    margin-bottom: 15px;  /* Space between the line and the paragraph below */
+    border-bottom: 1px solid #6C0000; /* Your vintage maroon */
+}
+
+.sdg-master-section .sdg-card p {
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+/* --- Global Impact Hero / Banner Section --- */
+.sdg-master-section .impact-banner {
+    background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 70px 40px;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.sdg-master-section .impact-banner h1 {
+    color: #E2E8F0;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.sdg-master-section .impact-banner .subtitle {
+    font-family: 'Inter', sans-serif;
+    color: var(--sdg15);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.sdg-master-section .impact-banner h2 {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.sdg-master-section .impact-banner p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    color: #CBD5E1;
+}
+
+/* Secondary Grid for Impact Sub-sections */
+.sdg-master-section .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.sdg-master-section .impact-box h3 {
+    color: var(--sdg15);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sdg-master-section .impact-box p {
+    color: #94A3B8;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.sdg-master-section .continuity-list {
+    list-style: none;
+}
+
+.sdg-master-section .continuity-list li {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.sdg-master-section .continuity-list li::before {
+    content: "\f111";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    font-size: 0.6rem;
+    color: var(--primary-accent);
+}
+
+.sdg-master-section .quote-block {
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid var(--sdg15);
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 0 12px 12px 0;
+    text-align: left;
+}
+
+.sdg-master-section .quote-block p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--white);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .sdg-master-section .content-section { padding: 30px 20px; }
+    .sdg-master-section .impact-banner { padding: 50px 20px; }
+    .sdg-master-section .intro-section h1 { font-size: 2.2rem; }
+    .sdg-master-section .premium-grid { grid-template-columns: 1fr; } 
+    .sdg-master-section .premium-card { padding: 30px 20px; }
+}
+
