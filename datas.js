@@ -1279,10 +1279,365 @@ Empty continent glows.
 
 ---
 
+The Silk Root Bridge
+இலை மீது கட்டிய பாலம்;
+உயிரைக் காக்கும் பட்டு.
+Silk bridge spans leaf;
+Protects hidden life.
 
+---
 
+The Levitating Bud
+காற்றில் மிதக்கும் பச்சை மொட்டு;
+நிறம் செய்த மாயம்.
+Green bud hangs midair;
+Color creates illusion.
 
+---
 
+A Country Map
+பச்சை இலையில் பெரிய கண்டம்;
+நரம்புகள் வரையும் எல்லை.
+Huge leaf maps a country;
+Veins draw distinct borders.
+
+---
+
+The Green Khalifa
+உயர்ந்த பச்சை சுழல் கோபுரம்;
+காற்றில் வளைந்து நிற்கும்.
+Tall green spiral skyscraper;
+Bends but never breaks.
+
+---
+
+The Canopy Cannibal
+பச்சை இலைப் பறவை உண்ணும்;
+அண்டை இலையை விழுங்கும்.
+Green leaf bird eats;
+Swallows its neighbor.
+
+---
+
+The Pistachio Cone
+உண்ணா பச்சை பனிக் கூம்பு;
+கண்களுக்கு இனிக்கும் காட்சி.
+Pistachio green ice cone;
+Sweet visual treat.
+
+---
+
+The Equinox Leaf
+பச்சை மஞ்சள் சரிபாதி இலை;
+நரம்பு பிரிக்கும் காலம்.
+Half green half yellow;
+Midrib splits timelines.
+
+---
+
+The Golden Cobra
+மஞ்சள் இலை நாகம் காக்கும்;
+நீண்ட ஆயுள் தரும்.
+Yellow leaf cobra protects;
+Grants long life.
+
+---
+
+The botanical broadcaster
+வானை நோக்கும் பழுப்பு ஒலிவாங்கி;
+அமைதியான உண்மைகளை உரைக்கும்.
+Brown microphone faces sky;
+Broadcasts silent truths.
+
+---
+
+The Botanical Oyster
+பச்சை சிப்பிக்கு இலை குடை;
+குளிர்ச்சியான மென்மையான நிழல்.
+Leaf umbrella shields oyster;
+Cool gentle canopy.
+
+---
+
+The Folded Seam
+இலையைத் மடித்து  தைத்த பட்டு;
+இயற்கையின் உறுதியான நூல்.
+Silk stitch folds leaf;
+Nature's strongest thread.
+
+---
+
+The Hollow Predator
+இலை துளையில் மறைந்திருக்கும் விலங்கு;
+நிழலில் இருந்து பாயும்.
+Leaf hole hides beast;
+Strikes from the shadows.
+
+---
+
+The Glitched Sail
+வடுக்களால் விரிந்த தனித்த இலை;
+குறையே உரம் ஆகும்.
+Scarred leaf grows wider;
+Flaw fuels sheer endurance.
+
+---
+
+The Twin Sentinels
+இணைந்து வளரும் இரண்டு மொட்டுகள்;
+ஒன்றாக ஒளியைத் தேடும்.
+Twin buds grow together;
+Seeking one light.
+
+---
+
+The Solitary Pillar
+பூவின் அழகை உதிர்த்து நிற்கும்;
+பழமாகும் ஒற்றைத் தூண்.
+Shedding jewels pillar stands;
+Becoming tomorrow's fruit.
+
+---
+
+The Reflected Aerial Mirage
+நீரில் தெரியும் பரந்த பெருங்காடு;
+மேகம் தொடும் மரங்கள்.
+Water reflects vast rainforest;
+Clouds touch the canopy.
+
+---
+
+The physics at play
+பச்சை மொட்டில் தொங்கும் மழைத்துளி;
+காட்சியை வளைக்கும் கண்ணாடி.
+Hanging water drops pause;
+Nature's liquid lens.
+
+---
+
+The Botanical Flask
+இளஞ்சிவப்பு குப்பி தேனை சுமக்குமே;
+பச்சை மூடி காக்கும்.
+Pink flask holds nectar;
+Green cork protects.
+
+---
+
+The Falling Statue
+மஞ்சள் கடலில் சாயும் சிலை;
+காய்ந்த நரம்பின் காவியம்.
+Golden sea tilts statue;
+Nature's falling monument.
+
+---
+
+The Emerald Visage
+மூன்று இலைகள் முக்கோணம் ஆகும்;
+நேரம் முகம் காட்டும்.
+Three leaves form triangle;
+Time reveals face.
+
+---
+
+The Laughing Stem
+பனியில் மிதக்கும் ஆப்பிள் தண்டு;
+இயற்கையின் சிரிக்கும் முகம்.
+Floating frosty apple stem;
+Nature's laughing face.
+
+---
+
+The Yoga Amphibians
+நீரில் மிதக்கும் மூன்று தவளைகள்;
+அமைதியாக செய்யும் யோகம்.
+Three frogs floating still;
+Practicing quiet yoga.
+
+---
+
+The Botanical Drone
+பச்சை இலைக் குடையின் கீழே;
+பறக்கத் துடிக்கும் ட்ரோன்.
+Green drone under umbrella;
+Ready to fly.
+
+---
+
+The Botanical Brawler
+பச்சை மாங்காய் வீரன் முகம்;
+தூய சினம் காட்டும்.
+Green mango heavyweight brawler;
+Displaying pure wrath.
+
+---
+
+The Epicormic Mother
+முரட்டு மரக்காம்பில் முளைத்த பசுந்தளிர்;
+வன்பட்டை பிளந்த புத்துயிர்.
+Woodden nipple's tender leaf;
+Hard bark yields life.
+
+---
+
+The Green Rocket fuselage 
+வானைப் பிளக்கும் பச்சை ஏவூர்தி;
+கிளையில் முடங்கிய முன்மாதிரி.
+Green rocket seeks sky;
+Branch grounds prototype.
+
+---
+
+The Monotone Butterfly
+தூய வெண்ணிற ஒற்றைக்கொம்புப் பட்டாம்பூச்சி;
+இருளில் பூத்த மலர்மாயம்.
+Pure white single-antenna butterfly;
+Flower magic in darkness.
+
+---
+
+The Making Of A Monster 
+கள்வன் கடித்த மாதுளையின் வாய்;
+பற்கள் காட்டும் அச்சுறுத்தும்.
+Thief bitten pomegranate's mouth;
+Shows terrifying teeth.
+
+---
+
+The Pierced Heart
+ஈரிலை இதயம் துளைத்த தண்டு;
+உயிர்த்தெழும் இயற்கையின் வேல்.
+Two leaves form heart;
+Stem pierces straight through.
+
+---
+
+The New Green Continent
+பசுமை போர்த்திய மலை விளிம்பு;
+கீழே மேகமூடிய காடு.
+Greenery covered mountain edge;
+Cloudy forest below.
+
+---
+
+The Trinity of Time
+மொட்டு மலர் சருகு ஒருகிளையில்;
+காலம் காட்டும் சுழற்சி.
+Bud, bloom and decay;
+Time's single branch.
+
+---
+
+The Leaf Peacock
+இலையில் விரிந்த மயில் தோகை;
+மையத்தில் நீண்ட முகம்.
+Green leaf unfurls peacock fan;
+Central face looks ahead.
+
+---
+
+The Canopy Butterfly
+சிறகு விரிக்கும் இளம் பச்சை;
+உலகை நோக்கும் வியப்பு.
+Tender green butterfly wings;
+Watching the world.
+
+---
+
+The Lignin Pendulum
+உலர்ந்த இலை தாங்கும் பளு;
+காற்றை வெல்லும் நிலை.
+Dried leaf bears the weight;
+Balance conquers wind.
+
+---
+
+The Botanical Heist
+பச்சை உறைக்குள் களவுபோன மலர்;
+திறந்த வாய் சாட்சி.
+Thief empties the green vault;
+Open mouth remains.
+
+---
+
+The Seed Cavern
+கருமை குகையிலிருந்து சிதறும் விதைகள்;
+முடிவில் தொடங்கும் உயிர்.
+Dark cave spills treasures;
+Endings whisper beginnings.
+
+---
+
+The Phantom Reptile
+பச்சையைத் தின்ற பல்லி வடிவம்;
+காய்ந்த சருகின் கலை.
+Phantom reptile hugs the green;
+Dried leaf's art.
+
+---
+
+The One-Eyed Avatar
+இலையில் ஒருகண் பறவை முகம்;
+புதிய காலத்தின் வடிவம்.
+Leaf shapes one eyed bird;
+New avatar looks ahead.
+
+---
+
+Cyclone Pachai
+சுழலும் பச்சை இலை புயல்;
+மையத்தில் திறந்த கண்.
+Leaf spins silent storm;
+Calm eye remains.
+
+---
+
+The Canopy Hippopotamus
+மஞ்சள் இலையில் பெரும் நீர்யானை;
+கொம்புடன் கீழே நோக்குகிறது.
+Yellow leaf hangs heavy;
+Horned hippo watches.
+
+---
+
+Nature's Biodegradable Basket
+ஏடாய் மடிந்த இயற்கை கூம்பு;
+வாடினும் கொள்ளும் வடிவு.
+Leaf folds natural cone;
+Withered, it holds form.
+
+---
+
+The Fluid Art
+பாய்ந்த வண்ணங்கள் காயும் இலையில்;
+இயற்கையின் ஆதி ஓவியம்.
+Spilled colors on drying leaf;
+Nature's primordial painting.
+
+---
+
+The Botanical Stick Art
+பச்சை மொட்டு உருவத்தைத் தாங்கியுள்ளது; 
+இயற்கையின் தொன்மையான கலை.
+Green bud holds figure;
+Nature's ancient art.
+
+---
+
+The Botanical Moustache
+மஞ்சள் இலை செதுக்கிய மீசை;
+இயற்கையின் குறும்பான வேடம்.
+Yellow leaf sculpts moustache;
+Nature's playful disguise.
+
+---
+
+The Conqueror's Hand
+மாமலையை ஏந்தும் சருகின் விரல்கள்;
+மண்ணை ஆளும் கரம்.
+Withered hand grasps mountain;
+Nature conquers earth.
+
+---
 
 
 
